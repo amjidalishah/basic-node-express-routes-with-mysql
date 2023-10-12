@@ -16,7 +16,7 @@ Follow these instructions to set up and run the project on your local machine.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/node-express-sqlite-crud.git
+git clone https://github.com/amjidalishah/node-express-sqlite-crud.git
 cd node-express-sqlite-crud
 ```
 
@@ -25,8 +25,9 @@ cd node-express-sqlite-crud
 ```bash
 npm install
 ```
-3. Run the project:
-   
+
+3. Run the project
+
 ```bash
 npm run dev
 ```
@@ -35,29 +36,36 @@ The server will start on port 3000 by default. You can access the API at http://
 
 Usage
 API Endpoints
-Create a User
-Endpoint: POST /api/users
-Request Body: JSON object with name and email fields.
- 
+
+1. Create a User
+   Endpoint: POST /api/users
+   Request Body: JSON object with name and email fields.
+
+Example: json
+
 ```bash
 {
   "name": "John Doe",
   "email": "johndoe@example.com"
 }
 ```
-Get All Users
-Endpoint: GET /api/users
-Get a User by ID
-Endpoint: GET /api/users/:id
-Replace :id with the ID of the user you want to retrieve.
-Update a User by ID
-Endpoint: PUT /api/users/:id
-Replace :id with the ID of the user you want to update.
-Request Body: JSON object with updated name and email fields.
-Delete a User by ID
-Endpoint: DELETE /api/users/:id
-Replace :id with the ID of the user you want to delete.
-Examples
+
+2. Get All Users
+   Endpoint: GET /api/users
+
+3. Get a User by ID
+   Endpoint: GET /api/users/:id
+   Replace :id with the ID of the user you want to retrieve.
+
+4. Update a User by ID
+   Endpoint: PUT /api/users/:id
+   Replace :id with the ID of the user you want to update.
+   Request Body: JSON object with updated name and email fields.
+
+5. Delete a User by ID
+   Endpoint: DELETE /api/users/:id
+   Replace :id with the ID of the user you want to delete.
+
 You can use tools like Postman to test the API endpoints. See the "Usage" section for more details on how to send requests.
 
 Database
