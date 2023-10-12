@@ -25,7 +25,8 @@ cd node-express-sqlite-crud
 ```bash
 npm install
 ```
-
+3. Run the project:
+   
 ```bash
 npm run dev
 ```
@@ -33,10 +34,40 @@ npm run dev
 The server will start on port 3000 by default. You can access the API at http://localhost:3000.
 
 Usage
+API Endpoints
+Create a User
+Endpoint: POST /api/users
+Request Body: JSON object with name and email fields.
+ 
+```bash
+{
+  "name": "John Doe",
+  "email": "johndoe@example.com"
+}
+```
+Get All Users
+Endpoint: GET /api/users
+Get a User by ID
+Endpoint: GET /api/users/:id
+Replace :id with the ID of the user you want to retrieve.
+Update a User by ID
+Endpoint: PUT /api/users/:id
+Replace :id with the ID of the user you want to update.
+Request Body: JSON object with updated name and email fields.
+Delete a User by ID
+Endpoint: DELETE /api/users/:id
+Replace :id with the ID of the user you want to delete.
+Examples
+You can use tools like Postman to test the API endpoints. See the "Usage" section for more details on how to send requests.
 
-- API Endpoints
-- Create a User
-- Endpoint: POST /api/users
-- Request Body: JSON object with name and email fields.
+Database
+The application uses SQLite as the database. The database file is mydb.db, and a users table is created to store user information.
 
-Example:
+Error Handling
+Proper error handling has been implemented for database operations. If an error occurs, the server will respond with an error message and the appropriate HTTP status code.
+
+Contributing
+Feel free to contribute to this project by submitting issues or pull requests. We welcome your feedback and improvements.
+
+License
+This project is licensed under the MIT License. See the LICENSE.md file for details.
