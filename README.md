@@ -34,8 +34,7 @@ npm run dev
 
 The server will start on port 3000 by default. You can access the API at http://localhost:3000.
 
-Usage
-API Endpoints
+### Usage API Endpoints
 
 1. Create a User
    Endpoint: POST /api/users
@@ -68,14 +67,18 @@ Example: json
 
 You can use tools like Postman to test the API endpoints. See the "Usage" section for more details on how to send requests.
 
-Database
+#### Database
+
 The application uses SQLite as the database. The database file is mydb.db, and a users table is created to store user information.
 
-Error Handling
+#### Error Handling
+
 Proper error handling has been implemented for database operations. If an error occurs, the server will respond with an error message and the appropriate HTTP status code.
 
-Contributing
+#### Contributing
+
 Feel free to contribute to this project by submitting issues or pull requests. We welcome your feedback and improvements.
 
-License
+#### License
+
 This project is licensed under the MIT License. See the LICENSE.md file for details.
